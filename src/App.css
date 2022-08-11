@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;600;800&family=Poppins:ital,wght@0,400;0,500;1,400&display=swap');
+
+*{
+  font-family: 'Manrope', sans-serif;
+  /* color: hsl(225, 20%, 60%); */
+}
+
+body{
+  background-image: url(./images/bg-pattern.svg);
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.top-outer{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-image: url(./images/pattern-circles.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  min-height: 200px;
+  /* margin-top: 5%; */
+}
+
+.bottom-outer{
+  display: flex;
+  flex-direction: column;
+  width: 35%;
+  margin-left: 32.5%;
+  margin-right: 32.5%;
+  background-color: white;
+  border-color: black;
+  border-radius: 12px;
+  box-shadow:  5px 5px 100px #dbdbdb,
+                -5px -5px 100px #ffffff;
+}
+.bottom-container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8%;
+  /* color: hsl(225, 20%, 60%); */
+}
+.rchild{
+  display: flex;
+  font-size: 250%;
+  font-weight: 800;
+}
+.rchild1 {
+  color: hsl(225, 20%, 60%);
+  font-size: 50%;
+  display: flex;
+  align-items: center;
+}
+
+.bottom-last-component{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-bottom: 2%;
+}
+ul{
+  list-style: none;
+  padding: 0;
+  /* padding-left: 15%; */
+}
+li{
+  margin-bottom: 4%;
+}
+
+.top1 {
+  color: black;
+  font-size: 170%;
+  font-weight: 800;
+  margin:0;
+}
+
+.top2 {
+  font-weight: 600;
+  font-size: 15px;
+  color: hsl(225, 20%, 60%);
+}
+
+.lchild {
+  color: hsl(225, 20%, 60%);
+  font-weight: 700;
+}
+
+.ic {
+  width: 5%;
+}
+
+.btn {
+  color: white;
+  border-radius: 15px;
+  /* width: 160%; */
+  padding: 8%;
+  background-color: hsl(227, 35%, 25%);
+  
+}
+
+.ul-container{
+  width: 50%;
+}
+
+.dark-nav {
+  background-color: black;
+  padding: 0.0005%
+}
+.Nav {
+  display: flex;
+}
+@media screen and (max-width: 480px){
+  .bottom-outer{
+    width: 80%;
+    margin-left: 10%;
+  }
+  .bottom-last-component{
+    flex-direction: column;
+  }
+  .bottom-container{
+    flex-direction: column;
+  }
+  label.name{
+    font-size: 80%;
+  }
+  .rchild{
+    margin-top: 1%;
+  }
+  .btn{
+    width: 160%;
+  }
+  .ul-container{
+    width: 70%;
+  }
+}
+
